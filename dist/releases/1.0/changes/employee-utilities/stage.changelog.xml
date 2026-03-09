@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+<include file="_custom/populate-database.sql" relativeToChangelogFile="true"/>
+<include file="cicd/package_specs/pkg_employees.sql" relativeToChangelogFile="true"/>
+<include file="cicd/package_bodies/pkg_employees.sql" relativeToChangelogFile="true"/>
+<include file="cicd/ref_constraints/employees_fk1.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>
